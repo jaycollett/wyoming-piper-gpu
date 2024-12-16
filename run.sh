@@ -4,6 +4,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/python3.10/dist-packages/
 python3 -m wyoming_piper \
     --piper '/usr/local/bin/piper' \
     --cuda \
+    --model en_US-lessac-medium.onnx \
     --uri 'tcp://0.0.0.0:10200' \
     --data-dir /data \
     --data-dir /share/piper \
